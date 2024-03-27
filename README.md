@@ -39,6 +39,24 @@ If you install BLAST via conda in this way you will need to run `conda activate 
     make
     make test
 
+## Docker
+
+Pre-built docker images are available on [Dockerhub](https://hub.docker.com/r/kapsakcj/stxtyper), though they may not be as up-to-date as the source code. To pull the image from Dockerhub, run:
+
+```bash
+# Pull the latest image
+docker pull kapsakcj/stxtyper:latest
+
+# Optionally, pull from a specific commit hash
+docker pull kapsakcj/stxtyper:<commit_hash>
+```
+
+A Dockerfile is included in the repository. To build the Docker image locally, run this command when in the root directory of the repository:
+
+```bash
+docker build -t stxtyper .
+```
+
 # Usage
 
     stxtyper -n <assembled_nucleotide.fa> [<options>]
