@@ -2,7 +2,7 @@ FROM ubuntu:jammy
 
 LABEL base.image="ubuntu:jammy"
 LABEL software="stxtyper"
-LABEL description="Scan contig files against PubMLST typing schemes"
+LABEL description="STX operon typing"
 LABEL website="https://github.com/evolarjun/stxtyper"
 LABEL license="https://github.com/evolarjun/stxtyper/blob/main/LICENSE"
 LABEL maintainer="Curtis Kapsak"
